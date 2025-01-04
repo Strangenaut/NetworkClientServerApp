@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Network Client</string>
+
+    <!--  Address + payload  -->
+    <string name="receiver_ip">Receiver\'s IPv4</string>
+    <string name="enter_address">Enter address</string>
+    <string name="receiver_port">Receiver\'s port</string>
+    <string name="enter_port">Enter port</string>
+    <string name="number_of_packets">Number of packets</string>
+    <string name="enter_number_of_packets">Enter number of packets</string>
+    <string name="inter_arrival_time">Inter-arrival-time (IAT), ms</string>
+    <string name="enter_iat">Enter IAT</string>
+    <string name="message">Message (random if empty)</string>
+    <string name="enter_message">Enter message</string>
+
+    <!--  Sending options  -->
+    <string name="send_tcp">Send TCP packet</string>
+    <string name="send_udp">Send UDP packet</string>
+
+    <!-- Network information -->
+    <string name="update_info">Update</string>
+    <string name="connectivity">Connectivity</string>
+    <string name="wifi_network">Wifi Network</string>
+    <string name="mobile_network">Mobile Network</string>
+    <string name="active_network_type">Active network type</string>
+    <string name="all_network_types">All network types</string>
+    <string name="network">Network</string>
+    <string name="priority">Priority</string>
+    <string name="no_wifi">No Wifi connection</string>
+    <string name="link_speed">Link speed</string>
+    <string name="configured_networks">Configured networks</string>
+    <string name="data_state">Data state</string>
+    <string name="phone_type">Phone type</string>
+    <string name="network_type">Network type</string>
+    <string name="gsm_cell_location">GSM cell location</string>
+    <string name="cell_id">Cell ID</string>
+    <string name="lac">Location area code (LAC)</string>
+    <string name="mcc">Mobile country code (MCC)</string>
+    <string name="mnc">Mobile network code (MNC)</string>
+    <string name="location">Location</string>
+    <string name="network_operator">Network operator</string>
+    <string name="sim_operator">SIM operator</string>
+
+    <!-- Network types -->
+    <string name="wifi">Wifi</string>
+    <string name="cellular">Cellular</string>
+    <string name="ethernet">Ethernet</string>
+
+    <!-- Data states -->
+    <string name="disconnected">Disconnected</string>
+    <string name="connecting">Connecting</string>
+    <string name="connected">Connected</string>
+    <string name="suspended">Suspended</string>
+    <string name="disconnecting">Disconnecting</string>
+    <string name="handover_in_progress">Handover in progress</string>
+
+    <!-- Other -->
+    <string name="none">None</string>
+    <string name="unknown">Unknown</string>
+    <string name="none_or_unknown">None or unknown</string>
+    <string name="mbps">Mbps</string>
+    <string name="dbm">dBm</string>
+    <string name="failed_to_connect">Failed to connect</string>
+</resources>

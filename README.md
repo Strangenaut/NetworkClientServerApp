@@ -10,8 +10,8 @@ An Android application for sending TCP/UDP packets and obtaining network informa
 - **Network info**: shows various information about **connectivity**, **wifi network**, **mobile network**.
 
 ### Screenshots
-![Packet sender](https://github.com/user-attachments/assets/8412d201-0dff-49ee-88c2-7f1b91576e6a)
-![Network info](https://github.com/user-attachments/assets/1a27fc66-137b-4d90-a1fd-535ad057c862)
+![Packet sender](https://github.com/user-attachments/assets/2bc2c57c-4731-4ad5-a74b-e157cc0e6bae)
+![Network info](https://github.com/user-attachments/assets/a5d32f97-7b78-4d6d-b776-65ebb136a5dc)
 
 ## Network Server
 A JVM application for receiving packets on a certain port.

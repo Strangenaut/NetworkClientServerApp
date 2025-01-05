@@ -174,7 +174,11 @@ class NetworkInfoRepositoryImpl(
             mcc = networkOperator.substring(0..2)
         }
 
-        val location = getLocation(mcc.toInt(), mnc.toInt(), lac.toInt(), cellId.toInt())
+        val location = if (mcc != app.getString(R.string.none) && mnc != app.getString(R.string.none)) {
+            getLocation(mcc.toInt(), mnc.toInt(), lac.toInt(), cellId.toInt())
+        } else {
+            app.getString(R.string.none)
+        }
 
         return TelephonyInfo(
             dataState = dataState,

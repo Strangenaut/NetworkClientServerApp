@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.0.21"
+    kotlin("jvm") version "1.9.0"
 }
 
 group = "com.strangenaut"
@@ -10,7 +10,6 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jline:jline-terminal:3.23.0")
     testImplementation(kotlin("test"))
 }
 

@@ -2,30 +2,44 @@ package com.strangenaut.networkclient.sender.data.repository
 
 import com.strangenaut.networkclient.sender.domain.model.Message
 import com.strangenaut.networkclient.sender.domain.repository.NetworkRepository
-import java.io.OutputStream
+import java.io.IOException
 import java.net.DatagramPacket
 import java.net.DatagramSocket
 import java.net.InetAddress
 import java.net.Socket
+import java.net.SocketException
 import kotlin.random.Random
 
 class NetworkRepositoryImpl : NetworkRepository {
 
-    private val socket: DatagramSocket
+    private var socket: DatagramSocket
 
     init {
-        val randomPort = Random.nextInt(1025, 5000)
-        socket = DatagramSocket(randomPort)
+        while (true) {
+            try {
+                val port = Random.nextInt(1025, 5000)
+
+                socket = DatagramSocket(port)
+                break
+            } catch (e: SocketException) {
+                e.printStackTrace()
+            }
+        }
     }
 
     override fun sendTcpPacket(ip: String, port: String, message: Message) {
         val socket = Socket(ip, port.toInt())
 
-        val outputStream: OutputStream = socket.getOutputStream()
-        outputStream.write(message.encodedPayload)
-        outputStream.flush()
+        try {
+            val outputStream = socket.getOutputStream()
 
-        socket.close()
+            outputStream.write(message.encodedPayload)
+            outputStream.flush()
+
+            socket.close()
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
     }
 
     override fun sendUdpPacket(ip: String, port: String, message: Message) {

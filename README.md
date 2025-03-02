@@ -1,6 +1,8 @@
 # Network client-server app
 
-A simple network application containing two main parts: "Network Client" Android application and "Network Server" JVM application.
+A simple network application containing two main parts: 
+- **[Network Client](https://github.com/Strangenaut/NetworkClientServerApp/tree/master/NetworkClient)** Android application;
+- **[Network Server](https://github.com/Strangenaut/NetworkClientServerApp/tree/master/NetworkServer)** JVM application.
 
 ## Network Client
 An Android application for sending TCP/UDP packets and obtaining network information.
